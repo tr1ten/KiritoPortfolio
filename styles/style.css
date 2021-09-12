@@ -1,0 +1,268 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+hr {
+    opacity: 0.1;
+}
+
+#logo {
+    text-shadow: #EFD9CE 1px 0 10px;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header {
+    border-bottom: 0.1em solid coral;
+    background-color: #242328;
+    letter-spacing: 3px;
+    padding: 0.2em 1em;
+    max-height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    opacity: 0.98;
+}
+
+nav {
+    min-width: 300px;
+}
+
+.head ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head ul li a {
+    color: white;
+    transition: border 0.2s ease;
+}
+
+.head ul li a:hover:not(:active) {
+    opacity: 70%;
+    border-bottom: 0.1em solid coral;
+}
+
+/* .head ul li a:focus,.head ul li a:active{
+    color:pink;
+    border-bottom: 0.1em solid coral;
+} */
+
+.me {
+    max-height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction p, .feature p {
+    flex-grow: 2;
+    padding: 0 2em;
+    letter-spacing: 0.2em;
+}
+
+.introduction h3 {
+    align-self: center;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.me img {
+    align-self: center;
+    display: inline;
+    /* padding: 1em; */
+    width: 30%;
+    background-size: contain;
+    height: auto;
+    /* border-bottom: 2px solid #242328; */
+}
+
+.me #gs {
+    cursor: pointer;
+    box-shadow: 8px 9px 7px 2px #C7EDE4;
+    justify-self: flex-end;
+    padding: 0.45em;
+    border-radius: 0.9em 0.1em;
+    font-weight: 400;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: white;
+    background-color: #242328;
+}
+
+.me #gs:hover {
+    position: relative;
+    border-radius: 0.1em 0.9em;
+    top: -1px;
+    color: rgb(231, 205, 231);
+}
+
+.impHead {
+    font-weight: normal;
+    font-size: 1.8em;
+    padding-left: 0.3em;
+    margin: 0.6em 0;
+}
+
+section#about div.feature {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section#about ul {
+    display: flex;
+    min-width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+section#about li {
+    margin: 0.3em;
+    align-self: center;
+    padding: 0.6em;
+    border-radius: 10px;
+    border: 2px solid steelblue;
+    flex-wrap: wrap;
+    color: #242328;
+}
+
+section#about li:hover {
+    cursor: crosshair;
+    border-color: coral;
+    background: #242328;
+    color: whitesmoke;
+}
+
+section.test.feature {
+    border-radius: 30% 0;
+    border-bottom: 2px solid coral;
+    color: coral;
+    width: 100%;
+    height: 40%;
+    margin: 2rem 0;
+    background: #242328;
+    display: flex;
+    flex-direction: row;
+    padding: 2.8rem 0;
+}
+
+span.qoute {
+    position: relative;
+    top: 0.4rem;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
+span.author {
+    color: rgba(255, 255, 255, 0.8);
+    right: 0;
+}
+
+.avatar {
+    /* margin: auto; */
+    justify-self: center;
+}
+
+.avatar img {
+    background-size: contain;
+    border-radius: 50%;
+    max-width: 200px;
+    border: 2px solid coral;
+}
+
+section.test.feature.f2 {
+    flex-direction: row-reverse;
+    color: #14b8d1;
+    border-radius: 0% 30%;
+    border-color: #08A4BD;
+}
+
+.f2 img {
+    border-color: #08A4BD;
+}
+
+textarea {
+    display: block;
+}
+
+form button {
+    padding: 1em 2em;
+    margin: 1em;
+    border: 2px solid coral;
+    border-radius: 0.4em;
+    color: white;
+    background-color: #242328;
+    transition: 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: coral;
+    position: relative;
+    top: -1px;
+}
+
+p.copy {
+    justify-self: center;
+    margin: 0;
+    color: white;
+    align-self: center;
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: #242328;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa {
+    font-size: 1.4em;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li a {
+    margin: 0.7em;
+    color: #C7EDE4;
+}
+@media (max-width: 560px) {
+    header {
+        flex-direction: column;
+    }
+    .me {
+        flex-direction: column;
+    }
+    .feature {
+        flex-direction: column;
+    }
+    section#about div.feature {
+        flex-direction: column;
+    }
+}
